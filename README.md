@@ -31,28 +31,4 @@ The **Home Automation System** is a Java-based application designed to manage an
 
 ---
 
-## How It Works  
 
-### Architecture  
-1. **Classes:**  
-   - `House`: Manages multiple rooms.  
-   - `Room`: Represents a specific room and its devices.  
-   - `Device`: Represents a gadget/appliance with functionality to toggle its state.  
-   - `Log`: Tracks the usage of each device.  
-
-2. **Interfaces:**  
-   - `IControllable`: Interface for device control.  
-   - `IRoomManager`: Interface for room management.  
-
-3. **Design Pattern:**  
-   - Modular and extensible, adhering to object-oriented principles.
-
----
-
-### Key Functionalities  
-
-#### 1. Add a Room  
-```java
-House house = new House();
-Room livingRoom = new Room(1, "Living Area", "Living");
-house.addRoom(livingRoom);
